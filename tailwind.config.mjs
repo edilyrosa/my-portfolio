@@ -10,6 +10,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'custom-blue': '#06c0ce',
+      },
+      perspective: {
+        500: "500px",
+      },
+      rotate: {
+        10: "10deg",
       },
     },
   },

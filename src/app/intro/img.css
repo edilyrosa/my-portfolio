@@ -1,0 +1,11 @@
+.mi-imagen {
+    width: 100%; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    filter: contrast(50%) saturate(100%) hue-rotate(120deg); /* Aplicar filtros */
+    transition: filter 0.5s; /* Suaviza el cambio de filtro */
+}
+
+.mi-imagen:hover {
+    filter: contrast(200%) saturate(50%) hue-rotate(50deg); /* Aumenta el efecto al pasar el ratón */
+
+}
