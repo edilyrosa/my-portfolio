@@ -617,11 +617,11 @@ export default function ScrollImageSlider() {
       {item.text}
     </p>
   ))}
-  <ul className="ml-[5%] py-4 mt-2 sm:mt-[10px] sm:gap-[10px] gap-[2%] lg:gap-[10%] text-gray-700 flex items-start justify-start text-xs">
+  <ul className="ml-[5%] py-4 mt-2 mt-[5vh] justify-rounded lg:items-center  gap-[10px] gap-[2%] lg:gap-[10%] text-gray-700 flex lg:items-start lg:justify-start text-xs">
     {[faJs, faNode, faReact].map((icon, idx) => (
       <li
         key={idx}
-        className={`md:mt-[4vh] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
+        className={`mt-[-3vh] lg:mt-[5vh] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
         style={{ transitionDelay: `${idx * 100}ms` }}
       >
         <FontAwesomeIcon
@@ -642,7 +642,7 @@ export default function ScrollImageSlider() {
             alt={images[index].alt}
             fill
             objectFit="contain"
-            className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-[100vh] max-h-full ml-[15%] mt-[-35%] sm:mt-[-25%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
+            className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-[100vh] max-h-full ml-[15%] mt-[-47%] sm:mt-[-25%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
             priority
           />
         </div>
