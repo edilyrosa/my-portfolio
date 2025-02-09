@@ -479,7 +479,11 @@
 
 
 
-'use client';
+
+
+
+
+'use client'
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -563,78 +567,49 @@ export default function ScrollImageSlider() {
   return (
     <>
       <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] flex w-full h-[100vh] max-h-[100vh] max-h-full overflow-hidden perspective-1000">
-        {/* <div className="absolute top-10 lg:top-20 left-5 lg:left-10 text-white font-bold transition-all duration-700 ease-in-out transform origin-top">
+
+        <div className="absolute top-10 lg:top-20 left-[5%] text-white font-bold transition-all duration-700 ease-in-out transform origin-top">
           {[
-            { text: "WEB DEVELOPER FULL STACK", className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white" },
-            { text: "UX/UI DESIGN", className: "text-4xl mt-8 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[rgb(0,0,0)]" },
-            { text: "CYBERSECURITY", className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[rgb(0,255,255,1)]" },
+            { text: "WEB DEVELOPER FULL STACK", className: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white" },
+            { text: "UX/UI DESIGN", className: "text-3xl mt-5 lg:mt-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[rgb(0,0,0)]" },
+            { text: "CYBERSECURITY", className: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[rgb(0,255,255,1)]" },
             { text: "SOFTWARE ENGINEER", className: "text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-[rgb(255,255,255)]" },
-            { text: "+4", className: "ml-14 text-xl md:ml-8 sm:text-4xl md:text-6xl mt-8 text-[rgb(255,0,255,0.8)]" },
-            { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-2vh] md:mt-[-4vh] text-[rgb(255,0,255,0.8)]" }
+            { text: "+4", className: "ml-14 text-xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl mt-8 text-[rgb(255,0,255,0.8)]" },
+            { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-1vh] sm:mt-[-2vh] lg:mt-[-3vh]  text-[rgb(255,0,255,0.8)]" }
           ].map((item, idx) => (
             <p
               key={idx}
-              className={`${item.className} mt-4 transition-all duration-700 ease-in-out opacity-0 translate-y-[-50%] ${visibleItems.includes(idx) ? 'opacity-100 translate-y-0' : ''}`}
+              className={`${item.className} mt-4 mt-[5px] lg:mt-[3%] transition-all duration-700 ease-in-out opacity-0 translate-y-[-50%] ${visibleItems.includes(idx) ? 'opacity-100 translate-y-0' : ''}`}
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
               {item.text}
             </p>
           ))}
-          <ul className="py-4 mt-2 gap-[5%] lg:gap-[10%] text-gray-700 flex items-start justify-start text-xs">
+         
+         
+         
+          <ul className="ml-[5%] py-4 lg:mt-2 justify-rounded lg:items-center  gap-[10px] gap-[2%] lg:gap-[10%] text-gray-700 flex lg:items-start lg:justify-start text-xs">
             {[faJs, faNode, faReact].map((icon, idx) => (
               <li
                 key={idx}
-                className={`flex flex-col items-center justify-around transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
+                className={`mt-[3vh] lg:mt-[5vh] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 <FontAwesomeIcon
                   icon={icon}
                   className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-green-600' : 'text-blue-400'} text-2xl sm:text-3xl md:text-4xl lg:text-6xl`}
                 />
-                <div className="text-white text-xl">
+                <div className="text-white text-xs md:text-sm lg:text-base">
                   {idx === 0 ? 'JavaScript' : idx === 1 ? 'Node.js' : 'React.js'}
                 </div>
               </li>
             ))}
           </ul>
-        </div> */}
 
-
-<div className="absolute top-10 lg:top-20 left-[5%] text-white font-bold transition-all duration-700 ease-in-out transform origin-top">
-  {[
-    { text: "WEB DEVELOPER FULL STACK", className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white" },
-    { text: "UX/UI DESIGN", className: "text-4xl mt-8 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[rgb(0,0,0)]" },
-    { text: "CYBERSECURITY", className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[rgb(0,255,255,1)]" },
-    { text: "SOFTWARE ENGINEER", className: "text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-[rgb(255,255,255)]" },
-    { text: "+4", className: "ml-14 text-xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl mt-8 text-[rgb(255,0,255,0.8)]" },
-    { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-2vh] sm:mt-[-2vh] lg:mt-[-3vh]  text-[rgb(255,0,255,0.8)]" }
-  ].map((item, idx) => (
-    <p
-      key={idx}
-      className={`${item.className} mt-4 mt-[5px] lg:mt-[3%] transition-all duration-700 ease-in-out opacity-0 translate-y-[-50%] ${visibleItems.includes(idx) ? 'opacity-100 translate-y-0' : ''}`}
-      style={{ transitionDelay: `${idx * 100}ms` }}
-    >
-      {item.text}
-    </p>
-  ))}
-  <ul className="ml-[5%] py-4 mt-2 mt-[5vh] justify-rounded lg:items-center  gap-[10px] gap-[2%] lg:gap-[10%] text-gray-700 flex lg:items-start lg:justify-start text-xs">
-    {[faJs, faNode, faReact].map((icon, idx) => (
-      <li
-        key={idx}
-        className={`mt-[-3vh] lg:mt-[5vh] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
-        style={{ transitionDelay: `${idx * 100}ms` }}
-      >
-        <FontAwesomeIcon
-          icon={icon}
-          className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-green-600' : 'text-blue-400'} text-2xl sm:text-3xl md:text-4xl lg:text-6xl`}
-        />
-        <div className="text-white text-xs md:text-sm lg:text-base">
-          {idx === 0 ? 'JavaScript' : idx === 1 ? 'Node.js' : 'React.js'}
+          
+       
         </div>
-      </li>
-    ))}
-  </ul>
-</div>
+
 
         <div className="h-full overflow-hidden">
           <Image
@@ -642,7 +617,7 @@ export default function ScrollImageSlider() {
             alt={images[index].alt}
             fill
             objectFit="contain"
-            className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-[100vh] max-h-full ml-[15%] mt-[-47%] sm:mt-[-25%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
+            className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-[100vh] max-h-full ml-[15%] mt-[-30%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
             priority
           />
         </div>
@@ -650,3 +625,6 @@ export default function ScrollImageSlider() {
     </>
   );
 }
+
+
+

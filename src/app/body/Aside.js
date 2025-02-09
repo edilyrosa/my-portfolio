@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RotatingText from '../RotatingText.js';
 import imgEdy from "../../../public/assets/diez.png";
 import img2 from "../../../public/image.png";
 import Image from "next/image";
@@ -25,9 +26,9 @@ export default function Aside () {
             </aside> */}
 
 
-            <div className=" bg-transparent p-5 w-[20%] max-w-sm h-full">
+            <div className=" bg-transparent p-5 w-[30%] max-w-sm h-full">
 
-                <div className="bg-gray-800 h-[60vh] shadow-xl rounded-lg card sticky top-5 max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
+                <div className="bg-gray-800 h-[80vh] shadow-xl rounded-lg card sticky top-5 max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
                     <div className="rounded-t-lg h-32 overflow-hidden">
                         <Image className="object-cover object-top w-full" 
                         src={img2}
@@ -42,25 +43,48 @@ export default function Aside () {
                     </div>
                 <div className="text-center mt-2">
                 <h2 className="font-semibold text-custom-blue">EDILY MORA</h2>
-                <p className="text-gray-500">SOFTWARE ENGINEER</p>
+                <p className="text-white italic">SOFTWARE ENGINEER</p>
+                <RotatingText
+                    texts={[
+                    "WEB DEVELOPER FULL STACK",
+                    "UX/UI DESIGN",
+                    "CYBERSECURITY",
+                    "SOFTWARE ENGINEER",
+                    "+4 YEARS OF EXPERIENCE"
+                    ]}
+                    mainClassName="text-xs p-2 mx-auto my-4 max-w-[90%] justify-center bg-cyan-400 text-black overflow-hidden rounded-lg"
+                    staggerFrom="last"
+                    initial={{ y: "100%" }}
+                    animate={{ y: 0 }}
+                    exit={{ y: "-120%" }}
+                    staggerDuration={0.025}
+                    splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                    transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                    rotationInterval={2000}
+                />
+            
+            
+            
+            
             </div>
             <ul className="py-4 mt-2 text-gray-700 flex items-center justify-around text-xs">
                 <li className="flex flex-col items-center justify-around">
-                <FontAwesomeIcon icon={faJs} style={{color: "#FFD43B",}} />
+                <FontAwesomeIcon icon={faJs} style={{color: "#FFD43B", fontSize: "4em"}} />
                     <div>JavaScript</div>
                 </li>
                 <li className="flex flex-col items-center justify-between">
                 
-                <FontAwesomeIcon icon={faNode} style={{color: 'green' }}/>
+                <FontAwesomeIcon icon={faNode} style={{color: 'green', fontSize: "4em" }}/>
                     <div>Node.js</div>
                 </li>
                 <li className="flex flex-col items-center justify-around">
-                <FontAwesomeIcon icon={faReact} style={{color: "#42a7f5" }} />
+                <FontAwesomeIcon icon={faReact} style={{color: "#42a7f5", fontSize: "4em" }} />
                     <div>React.js</div>
                 </li>
             </ul>
-            <div className="p-4 border-t mx-8 mt-2">
-                <button className="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold text-white px-6 py-2">Follow</button>
+            <div className="p-4 border-t mx-8 mt-10">
+                <button className="text-xs block mx-auto rounded-full bg-gray-900 hover:shadow-lg hover:bg-cyan-300 hover:text-gray-900 font-semibold text-white px-6 py-2">
+                    Let's Talk</button>
             </div>
         </div>
         </div>
