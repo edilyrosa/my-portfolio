@@ -592,12 +592,13 @@ export default function ScrollImageSlider() {
             {[faJs, faNode, faReact].map((icon, idx) => (
               <li
                 key={idx}
-                className={`mt-[3vh] lg:mt-[5vh] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
+                className={`mt-[5%] md:mt-[2%] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 <FontAwesomeIcon
                   icon={icon}
-                  className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-green-600' : 'text-blue-400'} text-2xl sm:text-3xl md:text-4xl lg:text-6xl`}
+                  className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-green-600' : 'text-blue-400'} 
+                  text-3xl md:text-4xl lg:text-5xl  xl:text-6xl`}
                 />
                 <div className="text-white text-xs md:text-sm lg:text-base">
                   {idx === 0 ? 'JavaScript' : idx === 1 ? 'Node.js' : 'React.js'}
