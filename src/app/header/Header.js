@@ -549,9 +549,9 @@ export default function ScrollImageSlider() {
 
   let dropShadowClass = '';
   if (images[index].url === tres) {
-    dropShadowClass = 'drop-shadow-[0_0_40px_rgba(255,0,255,0.5)]';
+    dropShadowClass = 'drop-shadow-[0_0_40px_rgba(0,0,255,0.5)]';
   } else if (images[index].url === cuatro) {
-    dropShadowClass = 'drop-shadow-[0_0_50px_rgba(255,0,255,0.5)]';
+    dropShadowClass = 'drop-shadow-[0_0_50px_rgba(255,120,255,0.5)]';
   } else if (images[index].url === cinco) {
     dropShadowClass = 'drop-shadow-[0_0_60px_rgba(255,0,255,0.5)]';
   } else if (images[index].url === seis) {
@@ -566,41 +566,47 @@ export default function ScrollImageSlider() {
 
   return (
     <>
-      <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] flex w-full h-[100vh] max-h-[100vh] max-h-full overflow-hidden perspective-1000">
+      <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
+      flex w-full h-screen max-h-full overflow-hidden perspective-1000">
 
         <div className="absolute top-10 lg:top-20 left-[5%] text-white font-bold transition-all duration-700 ease-in-out transform origin-top">
           {[
-            { text: "WEB DEVELOPER FULL STACK", className: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white" },
-            { text: "UX/UI DESIGN", className: "text-3xl mt-5 lg:mt-10 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[rgb(0,0,0)]" },
+            { text: "WEB DEVELOPER FULL STACK", className: "xs:text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl text-white" },
+            { text: "UX/UI DESIGN", className:" text-sm s:text-base xs:text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  mt-5 lg:mt-10 text-[rgb(0,0,0)]" },
             { text: "CYBERSECURITY", className: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[rgb(0,255,255,1)]" },
             { text: "SOFTWARE ENGINEER", className: "text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-[rgb(255,255,255)]" },
-            { text: "+4", className: "ml-14 text-xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl mt-8 text-[rgb(255,0,255,0.8)]" },
-            { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-1vh] sm:mt-[-2vh] lg:mt-[-3vh]  text-[rgb(255,0,255,0.8)]" }
+            { text: "+4", className: "ml-14 text-3xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl sm:mt-8 mt-[10%] text-[rgb(255,0,255,0.8)]" },
+            { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-1vh] sm:mb-[-5vh] sm:mt-[-1vh] lg:mt-[-1%] pb-4 text-[rgb(255,0,255,0.8)]" }
           ].map((item, idx) => (
             <p
               key={idx}
-              className={`${item.className} mt-4 mt-[5px] lg:mt-[3%] transition-all duration-700 ease-in-out opacity-0 translate-y-[-50%] ${visibleItems.includes(idx) ? 'opacity-100 translate-y-0' : ''}`}
+              className={`${item.className} mt-[5px] lg:mt-[3%] transition-all duration-700 ease-in-out opacity-0 translate-y-[-50%] ${visibleItems.includes(idx) ? 'opacity-100 translate-y-0' : ''}`}
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
               {item.text}
             </p>
           ))}
          
-         
-         
-          <ul className="ml-[5%] py-4 lg:mt-2 justify-rounded lg:items-center  gap-[10px] gap-[2%] lg:gap-[10%] text-gray-700 flex lg:items-start lg:justify-start text-xs">
+          <ul className="px-2 flex sm:items-start sm:justify-start
+             mt-[5%] xs:mt-[15%] sm:mt-[0%] md:mt-[-1%] lg:mt-[-3%]
+             py-4 gap-[10%] sm:gap-[3%] justify-around w-screen
+         ">
             {[faJs, faNode, faReact].map((icon, idx) => (
               <li
                 key={idx}
-                className={`mt-[5%] md:mt-[2%] flex flex-col items-center justify-around sm:mt-[10px] transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
+                className={`flex flex-col items-center justify-around gap-2
+                  mt-[5%] sm:mt-[10px] md:mt-[2%] 
+                  transition-all duration-700 ease-in-out opacity-0 translate-x-[-50%] hover:scale-110 
+                  hover:translate-y-[5px] ${visibleIcons.includes(idx) ? 'opacity-100 translate-x-0' : ''}`}
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 <FontAwesomeIcon
                   icon={icon}
                   className={`${idx === 0 ? 'text-yellow-500' : idx === 1 ? 'text-green-600' : 'text-blue-400'} 
-                  text-3xl md:text-4xl lg:text-5xl  xl:text-6xl`}
+                  text-xl s:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl`}
                 />
-                <div className="text-white text-xs md:text-sm lg:text-base">
+                <div className="text-white px-2
+                text-xs s:text-base xs:text-xl sm:text-xs md:text-sm lg:text-base">
                   {idx === 0 ? 'JavaScript' : idx === 1 ? 'Node.js' : 'React.js'}
                 </div>
               </li>
@@ -618,7 +624,10 @@ export default function ScrollImageSlider() {
             alt={images[index].alt}
             fill
             objectFit="contain"
-            className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-[100vh] max-h-full ml-[15%] mt-[-30%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
+            // className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-full ml-[15%] mt-[-30%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
+            className={`max-w-full h-auto max-h-[100%] ml-[15%] 
+               mt-[-60%] s:mt-[-50%] xs:mt-[-30%] sm:mt-[-25%] md:mt-[-15%] lg:mt-[0%] 
+               transition-opacity duration-400 ${dropShadowClass}`}
             priority
           />
         </div>

@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '500px', // Punto de quiebre personalizado
+        's': '380px', // Punto de quiebre personalizado
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

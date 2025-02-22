@@ -52,7 +52,7 @@ export default function Aside () {
                     "SOFTWARE ENGINEER",
                     "+4 YEARS OF EXPERIENCE"
                     ]}
-                    mainClassName="text-xs p-2 mx-auto my-4 max-w-[90%] justify-center bg-cyan-400 text-black overflow-hidden rounded-lg"
+                    mainClassName="text-black md:text-[8px] lg:text-xs sm:text-xs p-2 mx-auto my-4 max-w-[90%] justify-center bg-cyan-400 overflow-hidden rounded-lg"
                     staggerFrom="last"
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
@@ -83,8 +83,10 @@ export default function Aside () {
                 </li>
             </ul>
             <div className="p-4 border-t mx-8 mt-10">
-                <button className="text-xs block mx-auto rounded-full bg-gray-900 hover:shadow-lg hover:bg-cyan-300 hover:text-gray-900 font-semibold text-white px-6 py-2">
-                    Let's Talk</button>
+                <button className="text-xs block mx-auto rounded-full bg-gray-900 
+                hover:shadow-lg hover:bg-cyan-300 hover:text-gray-900 font-semibold
+                 text-white px-6 py-2">
+                    Lets Talk</button>
             </div>
         </div>
         </div>
