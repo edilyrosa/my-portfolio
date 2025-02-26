@@ -42,10 +42,12 @@ export default function Layout({ children }) {
           <Header />
         </header>
 
-        <main className={`frow-span-1 flex gap-5 p-5 ${isMediumScreen ? ' flex-row ' : ' flex-col '}`} >
+        <main className={`frow-span-1 flex flex-col md:flex-row ap-5 p-5 `} >
          {/* Renderizar componente basado en el tamaño de la pantalla */}
-         {isMediumScreen ? <AsideVertical />  :  <AsideHorizontal />}
+         {isMediumScreen === false ? <AsideHorizontal />  : <AsideVertical/>  }
+     
           <MainContent />
+    
         </main>
 
         <footer className=" row-span-1 bg-gray-800 text-white flex items-center justify-center h-20">

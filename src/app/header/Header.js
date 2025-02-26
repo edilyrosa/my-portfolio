@@ -547,6 +547,8 @@ export default function ScrollImageSlider() {
     return () => clearTimeout(timer);
   }, []);
 
+  
+
   let dropShadowClass = '';
   if (images[index].url === tres) {
     dropShadowClass = 'drop-shadow-[0_0_40px_rgba(0,0,255,0.5)]';
