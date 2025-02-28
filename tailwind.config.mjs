@@ -111,6 +111,7 @@ export default {
 		screens: {
 		  xs: "500px",
 		  s: "380px",
+		  ocho: "880px",
 		},
 		colors: {
 		  background: "hsl(var(--background))",

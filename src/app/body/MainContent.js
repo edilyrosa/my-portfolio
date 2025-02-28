@@ -7,6 +7,7 @@ import pro1 from "../../../public/assets/pro1.jpg";
 import freelancer from "../../../public/assets/freelancer.png";
 import freelancer2 from "../../../public/assets/freela.jpg";
 import GlowingEffectDemo from "./glowing-Effect-Demo";
+import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
 
 export default function MainContent() {
   return (
@@ -118,9 +119,24 @@ export default function MainContent() {
        
       
         
+        {/* Sección experience jobs */}
+        <section id="jobs" 
+        className="mt-[100vh] h-screen snap-start flex flex-col justify-start md:justify-start items-center">
+     
+          <h2 className="
+              text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+              font-bold text-center"> 
+              LABORAL <span className="text-[rgb(0,255,255)]"> EXPERIENCE. </span>
+            </h2>
+            <CardHoverEffectDemo/>
+       
+        </section>
+        
+        
+        
         {/* Sección Contacto */}
         <section id="contact" 
-        className="h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+        className="mt-[100vh] h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Contacto</h2>
             <p>

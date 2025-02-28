@@ -1,5 +1,5 @@
 import Link from "next/link";
-import RotatingText from '../RotatingText.js';
+import RotatingText from '../RotatingText';
 import imgEdy from "../../../public/assets/diez.png";
 import img2 from "../../../public/image.png";
 import Image from "next/image";

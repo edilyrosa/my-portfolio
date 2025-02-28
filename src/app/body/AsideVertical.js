@@ -1,10 +1,11 @@
 import Link from "next/link";
-import RotatingText from '../RotatingText.js';
+
 import imgEdy from "../../../public/assets/diez.png";
 import img2 from "../../../public/image.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNode, faReact, faJs } from '@fortawesome/free-brands-svg-icons';
+import RotatingText from "../RotatingText";
 
 export default function Aside () {
     return (
@@ -52,7 +53,8 @@ export default function Aside () {
                     "SOFTWARE ENGINEER",
                     "+4 YEARS OF EXPERIENCE"
                     ]}
-                    mainClassName="text-black md:text-[8px] lg:text-xs sm:text-xs p-2 mx-auto my-4 max-w-[90%] justify-center bg-cyan-400 overflow-hidden rounded-lg"
+                    mainClassName="text-black md:text-[8px] lg:text-xs sm:text-xs p-2 mx-auto 
+                    my-4 max-w-[90%] justify-center bg-[rgb(0,255,255)] overflow-hidden rounded-lg"
                     staggerFrom="last"
                     initial={{ y: "100%" }}
                     animate={{ y: 0 }}
@@ -84,7 +86,7 @@ export default function Aside () {
             </ul>
             <div className="p-4 border-t mx-8 mt-10">
                 <button className="text-xs block mx-auto rounded-full bg-gray-900 
-                hover:shadow-lg hover:bg-cyan-300 hover:text-gray-900 font-semibold
+                hover:shadow-lg hover:bg-[rgb(0,255,255)] hover:text-gray-900 font-semibold
                  text-white px-6 py-2">
                     Lets Talk</button>
             </div>
@@ -93,6 +95,4 @@ export default function Aside () {
           </>
     )
 }
-
-
 
