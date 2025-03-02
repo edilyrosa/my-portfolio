@@ -15,10 +15,9 @@ export function CardHoverEffectDemo() {
 export const projects = [
   {
     img:pro1.src,
-    title: "Freelance Latin America",
-    description:
-      "Freelance Frontend Developer | SEO.",
-    link: "https://googles.com",
+    title: "SEO, Web Development, Next.js, React.js",
+    description:"Learning platform of JS and CSS optimized for SEO...",
+    link: "https://learning-js-ten.vercel.app/",
   },
   {
     img:pro2.src,

@@ -30,14 +30,14 @@
 //         <Link
 //           href={item?.link}
 //           key={item?.link}
-//           className="relative group  block p-2 h-full w-full"
+//           className="relative group block p-2 h-full w-full"
 //           onMouseEnter={() => setHoveredIndex(idx)}
 //           onMouseLeave={() => setHoveredIndex(null)}
 //         >
 //           <AnimatePresence>
 //             {hoveredIndex === idx && (
 //               <motion.span
-//                 className="absolute inset-0 h-full w-full bg-[rgb(0,255,255)] dark:bg-slate-800/[0.8] block  rounded-3xl"
+//                 className="absolute inset-0 h-full w-full bg-[rgb(0,255,255)] dark:bg-slate-800/[0.8] block rounded-3xl"
 //                 layoutId="hoverBackground"
 //                 initial={{ opacity: 0 }}
 //                 animate={{
@@ -52,10 +52,28 @@
 //             )}
 //           </AnimatePresence>
 //           <Card>
+//             <div className="relative h-[40%] w-full overflow-hidden">
+//               <div className="justify-center p-4 rounded-3xl">
+//                   <Image src={item.img} alt={'mm'} width={500} height={300} 
+//                   className="bg-black h-full w-full object-cover
+//                     p-4 border-0.75 rounded-xl 
+//                     shadow-[0px_4px_10px_rgba(255,255,255,0.3)] 
+//                     hover:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
+//                     hover:saturate-200 hover:contrast-120
+//                     "  />
+//               </div>
+              
+//             </div>
+//             <div className="h-[60%] flex flex-col justify-center p-2">
+//               <CardTitle>
+//               <h3 className="text-base lg:font-sm font-semibold text-[rgb(255,255,255)]"> 
+//                 Skills: <span className="text-[rgb(0,255,255)]">{item.title}</span>
+//               </h3>
 
-//             <Image src={item.img} alt={'mm'} layout="fill" className="h-[30%]" />
-//             <CardTitle>{item.title}</CardTitle>
-//             <CardDescription>{item.description}</CardDescription>
+//               </CardTitle>
+//               <CardDescription>{item.description}</CardDescription>
+//             </div>
+//             <div className="text-center"> <i className="text-[10px]">Click on this card to visit the website.</i></div>
 //           </Card>
 //         </Link>
 //       ))}
@@ -73,14 +91,16 @@
 //   return (
 //     <div
 //       className={cn(
-//         `rounded-2xl h-full w-full p-4 overflow-hidden 
-//         bg-black border border-gray-800 dark:border-white/[0.2] group-hover:border-slate-700 
-//         relative z-20`,
+//         `rounded-2xl h-full w-full overflow-hidden border
+//          border-gray-800 dark:border-white/[0.2] group-hover:border-slate-700 relative z-20
+//          bg-cover bg-center
+//          bg-[#1c1b1b]
+//          `,
 //         className
 //       )}
 //     >
 //       <div className="relative z-50">
-//         <div className="p-4 bg-red-900">{children}</div>
+//         <div>{children}</div>
 //       </div>
 //     </div>
 //   );
@@ -93,7 +113,7 @@
 //   children: React.ReactNode;
 // }) => {
 //   return (
-//     <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+//     <h4 className={cn("text-zinc-100 font-bold tracking-wide", className)}>
 //       {children}
 //     </h4>
 //   );
@@ -108,7 +128,7 @@
 //   return (
 //     <p
 //       className={cn(
-//         "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+//         "mt-2 text-zinc-400 tracking-wide leading-relaxed text-sm",
 //         className
 //       )}
 //     >
@@ -116,23 +136,6 @@
 //     </p>
 //   );
 // };
-
-// // export const CardImage = ({
-// //   className,
-// //   src,
-// //   alt,
-// // }: {
-// //   className?: string;
-// //   src: string;
-// //   alt: string;
-// // }) => {
-// //   return (
-// //     <div className={cn("relative w-full h-[30%]", className)}>
-// //       <Image src={src} alt={alt} layout="fill" objectFit="cover"/>
-// //     </div>
-// //   );
-// // };
-
 
 
 
@@ -157,6 +160,14 @@ export const HoverEffect = ({
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  const handleTouchStart = (idx: number) => {
+    setHoveredIndex(idx);
+  };
+
+  const handleTouchEnd = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <div
       className={cn(
@@ -171,6 +182,8 @@ export const HoverEffect = ({
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onTouchStart={() => handleTouchStart(idx)}
+          onTouchEnd={handleTouchEnd}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -191,12 +204,33 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <div className="relative h-[40%] w-full overflow-hidden">
-              <Image src={item.img} alt={'mm'} width={500} height={300} className="h-full w-full object-cover p-4" />
+              <div className="justify-center p-4 rounded-3xl">
+                <Image
+                  src={item.img}
+                  alt={'mm'}
+                  width={500}
+                  height={300}
+                  className="bg-black h-full w-full object-cover
+                    p-4 border-0.75 rounded-xl 
+                    shadow-[0px_4px_10px_rgba(255,255,255,0.3)] 
+                    hover:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
+                    hover:saturate-200 hover:contrast-120
+                    active:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
+                    active:saturate-200 active:contrast-120
+                    "
+                />
+              </div>
             </div>
-            <div className="h-[60%] flex flex-col justify-center p-4">
-              <CardTitle>{item.title}</CardTitle>
+            <div className="h-[60%] flex flex-col justify-center p-2">
+              <CardTitle>
+                <h3 className="text-base lg:font-sm font-semibold text-[rgb(255,255,255)]"> 
+                  Skills: <span className="text-[rgb(0,255,255)]">{item.title}</span>
+                </h3>
+
+              </CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </div>
+            <div className="text-center"> <i className="text-[10px]">Click on this card to visit the website.</i></div>
           </Card>
         </Link>
       ))}
@@ -214,9 +248,11 @@ export const Card = ({
   return (
     <div
       className={cn(
-        `rounded-2xl h-full w-full overflow-hidden 
-        bg-black border border-gray-800 dark:border-white/[0.2] group-hover:border-slate-700 
-        relative z-20`,
+        `rounded-2xl h-full w-full overflow-hidden border
+         border-gray-800 dark:border-white/[0.2] group-hover:border-slate-700 group-active:border-slate-700 relative z-20
+         bg-cover bg-center
+         bg-[#1c1b1b]
+         `,
         className
       )}
     >

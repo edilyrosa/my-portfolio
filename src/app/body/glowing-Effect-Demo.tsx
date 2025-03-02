@@ -80,10 +80,14 @@ const GridItem = ({ area, icon, title, description, image, url }: GridItemProps)
    w-[95%] mx-auto`}>
       <div className="relative h-full rounded-3xl border border-gray-800 p-2 md:p-3">
         <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} />
-        <div className="bg-black border border-gray-700 relative flex h-full flex-col justify-between gap-4 overflow-hidden md:p-5 p-4 border-0.75 rounded-xl shadow-[0px_4px_10px_rgba(255,255,255,0.3)] hover:shadow-[0px_4px_10px_rgba(255,255,255,0.6)]">
+        <div className="bg-black border border-gray-700 relative flex h-full flex-col 
+        justify-between gap-4 overflow-hidden md:p-5 p-4 border-0.75 rounded-xl 
+        shadow-[0px_4px_10px_rgba(255,255,255,0.3)] hover:shadow-[0px_4px_10px_rgba(255,255,255,0.6)]">
           {/* Imagen */}
           <div className="h-[60%] w-full">
-            <Image src={image} alt={title} className="w-full h-full object-cover transition duration-300 hover:object-fill ease-in-out" width={300} height={200} />
+            <Image src={image} alt={title}  width={300} height={200}
+              className="w-full h-full object-cover transition duration-300 hover:object-fill ease-in-out" 
+              />
           </div>
           
           {/* Contenido */}
