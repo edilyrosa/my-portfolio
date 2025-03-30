@@ -38,7 +38,7 @@ export const FloatingDock = ({ items, className }) => {
       onMouseLeave={() => mouseX.set(Number.POSITIVE_INFINITY)}
       className={cn(
         "mb-[10px] left-1/2 -translate-x-1/2 z-50 flex h-16 gap-4 items-center rounded-2xl bg-transparent dark:bg-neutral-900 px-4 py-3 shadow-lg transition-all duration-300",
-        isSticky ? "fixed top-[10px]" : "fixed top-[55vh] -translate-y-1/2",
+        isSticky ? "fixed top-[10px]" : "hidden",
         className,
       )}
     >
