@@ -52,7 +52,6 @@
 
 
 
-
 import { FloatingDock } from "../components/ui/floating-dock"
 import { IconBrandGithub, IconBrandX, IconExchange, IconHome, IconNewSection, IconTerminal2 } from "@tabler/icons-react"
 import Image from "next/image"
@@ -77,11 +76,13 @@ export default function FloatingDockDemo() {
     {
       title: "Aceternity UI",
       icon: (
-        <div className="relative w-full h-full ml-[-8px]">
-          <Image src="/assets/diez.png" alt="Aceternity Logo" fill className="object-cover" sizes="100%" priority />
+        <div className="w-full h-full relative">
+          <Image src="/assets/diez.png" alt="Aceternity Logo" fill className="object-cover" />
         </div>
       ),
       href: "#",
+      className: "border-2 border-primary",
+      sizeMultiplier: 1.3,
     },
     {
       title: "Changelog",

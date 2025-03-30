@@ -203,23 +203,27 @@ export const FloatingDock = ({ items, className }) => {
       )}
     >
       {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} isSpecial={item.title === "Aceternity UI"} {...item} />
+        <IconContainer
+          mouseX={mouseX}
+          key={item.title}
+          title={item.title}
+          icon={item.icon}
+          href={item.href}
+          className={item.className}
+          sizeMultiplier={item.sizeMultiplier || 1}
+        />
       ))}
     </motion.div>
   )
 }
 
-function IconContainer({ mouseX, title, icon, href, isSpecial = false }) {
+function IconContainer({ mouseX, title, icon, href, className, sizeMultiplier = 1 }) {
   const ref = useRef(null)
 
   const distance = useTransform(mouseX, (val) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 }
-
     return val - bounds.x - bounds.width / 2
   })
-
-  // Make the special icon 30% larger
-  const sizeMultiplier = isSpecial ? 1.3 : 1
 
   const widthTransform = useTransform(
     distance,
@@ -280,7 +284,7 @@ function IconContainer({ mouseX, title, icon, href, isSpecial = false }) {
         onMouseLeave={() => setHovered(false)}
         className={cn(
           "aspect-square rounded-full bg-cyan-300 border border-cyan-700 dark:bg-neutral-800 flex items-center justify-center relative overflow-hidden",
-          isSpecial && "border-2 border-primary",
+          className,
         )}
       >
         <AnimatePresence>
@@ -296,10 +300,7 @@ function IconContainer({ mouseX, title, icon, href, isSpecial = false }) {
           )}
         </AnimatePresence>
 
-        <motion.div
-          style={{ width: widthIcon, height: heightIcon }}
-          className={cn("flex items-center justify-center", isSpecial && "w-full h-full")}
-        >
+        <motion.div style={{ width: widthIcon, height: heightIcon }} className="flex items-center justify-center">
           {icon}
         </motion.div>
       </motion.div>
