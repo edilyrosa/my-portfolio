@@ -27,14 +27,14 @@ export const projects = [
     link: "https://learnseo.vercel.app/",
   },
   {
-    img:"/app-1.mp4",
-    title:"SEO, Web Development, Next.js",
+    img:"/app-3.mp4",
+    title:"Magasine",
     description:
       "Designed and developed a blog focused on entertainment, implementing Google AdSense...",
-    link: "https://www.ultimochisme.com/",
+    link: "https://revista-app.vercel.app/",
   },
   {
-    img:"/app-1.mp4",
+    img:"/app-4.mp4",
     title: ": Back-end & Front-end, Next.js, Prisma ORM",
     description:
       "Built a management platform with secure RESTful APIs and a PostgreSQL database...",
