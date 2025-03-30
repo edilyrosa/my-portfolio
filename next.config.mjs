@@ -5,11 +5,16 @@
 
 
 /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     eslint: {
+//       ignoreDuringBuilds: true,
+//     },
+//   };
+
 const nextConfig = {
-    eslint: {
-      ignoreDuringBuilds: true,
-    },
+    eslint: false,
   };
+  
   
   export default nextConfig;
   
