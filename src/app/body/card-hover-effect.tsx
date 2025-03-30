@@ -178,7 +178,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "py-1 px-2 text-zinc-400 text-sm text-justify md:text-[10px] xl:text-xs",
+        "py-1 px-2 text-zinc-400 text-[8px] text-justify md:text-xs",
         className
       )}
     >
