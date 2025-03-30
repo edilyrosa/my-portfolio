@@ -6,7 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import pro1 from "../../../public/assets/pro1.jpg";
 import pro2 from "../../../public/assets/pro2.png";
 import pro3 from "../../../public/assets/pro3.jpg";
-import pro4 from "../../../public/assets/syspro.jpg";
+import pro4 from "../../../public/assets/pro4.jpg";
 
 // Datos de las tarjetas
 const items = [

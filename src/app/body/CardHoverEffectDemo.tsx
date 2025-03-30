@@ -1,57 +1,57 @@
 import { HoverEffect } from "./card-hover-effect";
-import pro1 from "../../../public/assets/pro1.jpg";
-import pro2 from "../../../public/assets/pro2.png";
+
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="w-full mx-auto px-2">
       <HoverEffect items={projects.map(project => ({
       ...project,
-      img: typeof project.img === 'string' ? project.img : project.img.src
+      img: typeof project.img === 'string' ? project.img : ''
       }))} />
     </div>
   );
 }
 export const projects = [
+ 
   {
-    img:pro1.src,
-    title: "SEO, Web Development, Next.js, React.js",
-    description:"Learning platform of JS and CSS optimized for SEO...",
-    link: "https://learning-js-ten.vercel.app/",
+    img:"/app-2.mp4",
+    title:"Next.js, SQL, API, Data Analytics & Visualization.",
+    description: "Required knowledge in: State Management, Form Handling & Validation, Security & Data Sanitization, Modular & Scalable Code, Database & Backend Development, Security Best Practices, and Secure Query Handling (Parameterized Queries).",
+    link: "https://management-task-psi.vercel.app/",
   },
   {
-    img:pro2.src,
-    title: "Netflix",
+    img:"/app-1.mp4",
+    title: ": SEO, Web Development, Next.js, React.js",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Built a management platform with secure RESTful APIs and a PostgreSQL database...",
+    link: "https://learnseo.vercel.app/",
   },
   {
-    img:pro2.src,
-    title: "Google",
+    img:"/app-1.mp4",
+    title:"SEO, Web Development, Next.js",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Designed and developed a blog focused on entertainment, implementing Google AdSense...",
+    link: "https://www.ultimochisme.com/",
   },
   {
-    img:pro2.src,
-    title: "Meta",
+    img:"/app-1.mp4",
+    title: ": Back-end & Front-end, Next.js, Prisma ORM",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Built a management platform with secure RESTful APIs and a PostgreSQL database...",
+    link: "https://sysprogestion.vercel.app/",
   },
-  {
-    img:pro2,
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
-  },
-  {
-    img:pro2,
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
-  },
-];
+  // {
+  //   img:pro2,
+  //   title: "Amazon",
+  //   description:
+  //     "A multinational technology company focusing on e-commerce, cloud",
+  //   link: "https://amazon.com",
+  // },
+//   {
+//     img:pro2,
+//     title: "Microsoft",
+//     description:
+//       "A multinational technology company that develops, manufactunal computs.",
+//     link: "https://microsoft.com",
+//   },
+ ];

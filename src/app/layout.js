@@ -2,11 +2,7 @@
 
 'use client'
 import { useState, useEffect } from 'react';
-import Link from "next/link";
 import "./globals.css";
-import img from "../../public/portfolio.jpg";
-import Image from "next/image";
-// import Header  from "./header/HeaderDos";
 import Header  from "./header/Header";
 import AsideVertical from "./body/AsideVertical";
 import AsideHorizontal from "./body/AsideHorizontal";
