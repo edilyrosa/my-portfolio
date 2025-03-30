@@ -2,6 +2,7 @@ import React from "react";
 import  Marquee3D  from "./Marquee3D";
 import GlowingEffectDemo from "./glowing-Effect-Demo";
 import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
+import Link from 'next/link';
 
 export default function MainContent() {
   return (
@@ -59,10 +60,13 @@ export default function MainContent() {
               </div> 
 
           </div>
+             
+        <h1>Bienvenido</h1>
+      <Link href="/projects">Ir a About</Link>
         </section>
         
-       
-      
+    
+
         
 
 
