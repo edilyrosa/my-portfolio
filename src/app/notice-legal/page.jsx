@@ -1,15 +1,15 @@
 
-import TracingBeanDemoLegalNotice from "./TracingBeanDemoLegalNotice";
+// import TracingBeanDemoLegalNotice from "./TracingBeanDemoLegalNotice";
 
-export default async function Cookies() {
+// export default async function Cookies() {
 
    
-  return (
+//   return (
           
-        <div>
+//         <div>
     
-            <div style={{height:'12vh'}}></div>
-          <TracingBeanDemoLegalNotice/>
-      </div>
-  );
-}
+//             <div style={{height:'12vh'}}></div>
+//           <TracingBeanDemoLegalNotice/>
+//       </div>
+//   );
+// }
