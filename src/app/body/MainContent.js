@@ -2,7 +2,6 @@ import React from "react";
 import  Marquee3D  from "./Marquee3D";
 import GlowingEffectDemo from "./glowing-Effect-Demo";
 import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
-import Link from 'next/link';
 
 export default function MainContent() {
   return (
@@ -18,12 +17,12 @@ export default function MainContent() {
           scrollbar-width: none;
         }
       `}</style>
-      <section className="w-full h-screen overflow-y-scroll snap-y snap-mandatory 
+      <section className="w-full overflow-y-scroll snap-y snap-mandatory 
       scroll-smooth hide-scrollbar">
         
         {/* Sección Intro */}
        <section id="intro" 
-       className="h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+       className=" md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             BRINGING IDEAS TO LIFE THROUGH INTUITIVE AND 
@@ -71,7 +70,7 @@ export default function MainContent() {
 
         {/* Sección Experiencia Profesional */}
         <section id="professional-background" 
-        className="h-[200%] md:h-screen snap-start flex flex-col 
+        className="md:h-screen snap-start flex flex-col 
         justify-start md:justify-start items-center">
           <div className="max-w-4xl mx-auto px-4">
           <h2 className="
@@ -94,7 +93,7 @@ export default function MainContent() {
 
         {/* Sección Educación */}
         <section id="educational-background" 
-        className="h-[200%] md:h-screen w-[90%] snap-start flex flex-col 
+        className="md:h-screen w-[90%] snap-start flex flex-col 
         pt-4 justify-start lg:pt-2 lg:justify-center items-center">
           <div className="mx-auto px-2">
             <h2 className="
@@ -118,7 +117,7 @@ export default function MainContent() {
         
         {/* Sección experience jobs */}
         <section id="jobs" 
-        className="h-[200%] md:h-screen snap-start flex flex-col justify-start md:justify-start items-center">
+        className="md:h-screen snap-start flex flex-col justify-start md:justify-start items-center">
     
             <h2 
             className="
@@ -136,7 +135,7 @@ export default function MainContent() {
         
         {/* Sección Contacto */}
         <section id="contact" 
-        className="h-[200%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+        className="md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Contacto</h2>
             <p>
