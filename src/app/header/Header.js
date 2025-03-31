@@ -569,7 +569,12 @@ export default function ScrollImageSlider() {
   return (
     <>
       <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
-      flex w-full md:h-screen overflow-hidden perspective-1000">
+      flex w-full md:h-screen overflow-hidden perspective-1000
+  
+     h-screen overflow-y-scroll snap-y snap-mandatory 
+      scroll-smooth hide-scrollbar
+      "
+      >
 
         <div className="absolute top-10 lg:top-20 left-[5%] text-white font-bold transition-all duration-700 ease-in-out transform origin-top">
           {[
@@ -633,6 +638,7 @@ export default function ScrollImageSlider() {
             priority
           />
         </div>
+      <div className='w-full h-screen'></div>
       </div>
     </>
   );

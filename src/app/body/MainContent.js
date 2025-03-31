@@ -19,6 +19,8 @@ export default function MainContent() {
       `}</style>
       <section className="w-full h-screen overflow-y-scroll snap-y snap-mandatory 
       scroll-smooth hide-scrollbar">
+
+
         
         {/* Sección Intro */}
        <section id="intro" 
