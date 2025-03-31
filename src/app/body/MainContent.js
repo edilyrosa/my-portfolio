@@ -61,8 +61,7 @@ export default function MainContent() {
 
           </div>
              
-        <h1>Bienvenido</h1>
-      <Link href="/projects">Ir a About</Link>
+  
         </section>
         
     
@@ -72,7 +71,7 @@ export default function MainContent() {
 
         {/* Sección Experiencia Profesional */}
         <section id="professional-background" 
-        className="h-screen snap-start flex flex-col 
+        className="h-[200%] md:h-screen snap-start flex flex-col 
         justify-start md:justify-start items-center">
           <div className="max-w-4xl mx-auto px-4">
           <h2 className="
@@ -95,7 +94,7 @@ export default function MainContent() {
 
         {/* Sección Educación */}
         <section id="educational-background" 
-        className="h-screen w-[90%] snap-start flex flex-col 
+        className="h-[200%] md:h-screen w-[90%] snap-start flex flex-col 
         pt-4 justify-start lg:pt-2 lg:justify-center items-center">
           <div className="mx-auto px-2">
             <h2 className="
@@ -119,7 +118,7 @@ export default function MainContent() {
         
         {/* Sección experience jobs */}
         <section id="jobs" 
-        className="h-screen snap-start flex flex-col justify-start md:justify-start items-center">
+        className="h-[200%] md:h-screen snap-start flex flex-col justify-start md:justify-start items-center">
     
             <h2 
             className="
@@ -137,7 +136,7 @@ export default function MainContent() {
         
         {/* Sección Contacto */}
         <section id="contact" 
-        className="h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+        className="h-[200%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Contacto</h2>
             <p>
