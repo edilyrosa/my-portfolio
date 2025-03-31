@@ -17,7 +17,7 @@ export default function MainContent() {
           scrollbar-width: none;
         }
       `}</style>
-      <section className="w-full overflow-y-scroll snap-y snap-mandatory 
+      <section className="w-full h-screen overflow-y-scroll snap-y snap-mandatory 
       scroll-smooth hide-scrollbar">
         
         {/* Sección Intro */}
