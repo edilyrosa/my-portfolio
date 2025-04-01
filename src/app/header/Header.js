@@ -567,7 +567,7 @@ export default function ScrollImageSlider() {
   }
 
   return (
-    <>
+    <div className='h-screen'>
       <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
       flex w-full overflow-hidden perspective-1000
      h-[50vh] xs:h-[70vh] ocho:h-screen 
@@ -595,7 +595,7 @@ export default function ScrollImageSlider() {
           ))}
          
           <ul className="px-2 flex sm:items-start sm:justify-start
-             mt-[5%] xs:mt-[15%] sm:mt-[0%] md:mt-[-1%] lg:mt-[-3%]
+             mt-[-1%] s:mt-[-5%] xs:mt-[8%] sm:mt-[0%] md:mt-[-1%] lg:mt-[-3%]
              py-4 gap-[10%] sm:gap-[3%] justify-around w-screen
          ">
             {[faJs, faNode, faReact].map((icon, idx) => (
@@ -640,7 +640,7 @@ export default function ScrollImageSlider() {
         </div>
    
       </div>
-    </>
+    </div>
   );
 }
 
