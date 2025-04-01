@@ -625,20 +625,20 @@ export default function ScrollImageSlider() {
         </div>
 
 
-        <div className="h-full overflow-hidden">
+        <div className=" overflow-hidden">
           <Image
             src={images[index].url || "/placeholder.svg"}
             alt={images[index].alt}
             fill
             objectFit="contain"
             // className={`w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 h-auto max-h-full ml-[15%] mt-[-30%] md:mt-[-15%] lg:mt-[0%] transition-opacity duration-400 ${dropShadowClass}`}
-            className={`max-w-full h-auto max-h-[100%] ml-[15%] 
+            className={`max-w-full ml-[15%] 
                mt-[-60%] s:mt-[-50%] xs:mt-[-30%] sm:mt-[-25%] md:mt-[-15%] lg:mt-[0%] 
                transition-opacity duration-400 ${dropShadowClass}`}
             priority
           />
         </div>
-      <div className='w-full h-screen'></div>
+   
       </div>
     </>
   );
