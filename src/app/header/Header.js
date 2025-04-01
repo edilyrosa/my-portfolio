@@ -569,9 +569,9 @@ export default function ScrollImageSlider() {
   return (
     <>
       <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
-      flex w-full md:h-screen overflow-hidden perspective-1000
-  
-     h-screen overflow-y-scroll snap-y snap-mandatory 
+      flex w-full overflow-hidden perspective-1000
+     h-[50vh] xs:h-[70vh] ocho:h-screen 
+     overflow-y-scroll snap-y snap-mandatory 
       scroll-smooth hide-scrollbar
       "
       >
