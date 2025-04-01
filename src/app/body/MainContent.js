@@ -24,8 +24,8 @@ export default function MainContent() {
         
         {/* Sección Intro */}
        <section id="intro" 
-       className=" md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
-          <div className="max-w-4xl mx-auto px-4">
+       className=" w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+          <div className="mx-auto px-4">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             BRINGING IDEAS TO LIFE THROUGH INTUITIVE AND 
               <span className="text-[rgb(0,255,255)]"> ENGAGING USER EXPERIENCES. 
@@ -44,7 +44,7 @@ export default function MainContent() {
 
                 {/* Hijo 2 */}
                 <div className="flex flex-col items-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+26</div>
+                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+33</div>
                   <div className="text-[10px] md:text-base text-gray-400">PROJECTS<br/>COMPLETED</div>
                 </div>
 
@@ -72,9 +72,9 @@ export default function MainContent() {
 
         {/* Sección Experiencia Profesional */}
         <section id="professional-background" 
-        className="md:h-screen snap-start flex flex-col 
+        className="md:h-screen w-[98%] snap-start flex flex-col 
         justify-start md:justify-start items-center">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="mx-auto px-4">
           <h2 className="
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl
               font-bold text-center"> 
@@ -83,8 +83,7 @@ export default function MainContent() {
             <p className="
             my-4 text-justify text-gray-300
             text-sm sm:text-base md:text-lg lg:text-xl font-semibold mb-4">
-              He trabajado en diversas empresas desarrollando aplicaciones web complejas con tecnologías como React,
-              Node.js, entre otras. Mi experiencia me permite adaptarme rápidamente a nuevos retos y entornos de trabajo.
+              As a freelance developer, I have successfully delivered scalable and high-performance solutions while also contributing as an instructor, sharing knowledge on web development. Additionally, my academic background includes a degree in Software Engineering and a Master’s in Law, demonstrating my versatility and analytical skills in problem-solving and project execution.
             </p>
             <GlowingEffectDemo/>
           </div>
@@ -95,7 +94,7 @@ export default function MainContent() {
 
         {/* Sección Educación */}
         <section id="educational-background" 
-        className="md:h-screen w-[90%] snap-start flex flex-col 
+        className="md:h-screen w-[98%]  snap-start flex flex-col 
         pt-4 justify-start lg:pt-2 lg:justify-center items-center">
           <div className="mx-auto px-2">
             <h2 className="
@@ -118,7 +117,7 @@ export default function MainContent() {
 <div className="h-screen"></div>
         
         {/* Sección experience jobs */}
-        <section id="jobs" 
+        <section id="projects" 
         className="md:h-screen snap-start flex flex-col justify-start md:justify-start items-center">
     
             <h2 
@@ -128,7 +127,7 @@ export default function MainContent() {
             </h2>
             <div className="text-center my-1
              text-base sm:text-lg md:text-xl lg:text-2xl
-            "> <i>Click on the card to visit the website.</i></div>
+            "> <i>Click on the card to visit the Website - Demos.</i></div>
             <CardHoverEffectDemo/>
        
         </section>
@@ -137,7 +136,7 @@ export default function MainContent() {
         
         {/* Sección Contacto */}
         <section id="contact" 
-        className="md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+        className="w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Contacto</h2>
             <p>
