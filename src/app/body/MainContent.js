@@ -2,6 +2,7 @@ import React from "react";
 import  Marquee3D  from "./Marquee3D";
 import GlowingEffectDemo from "./glowing-Effect-Demo";
 import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
+import Formulario from '../../components/Formulario'
 
 export default function MainContent() {
   return (
@@ -138,13 +139,17 @@ export default function MainContent() {
         <section id="contact" 
         className="w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4">Contacto</h2>
-            <p>
+            <h2 
+              className="text-3xl font-bold mb-4 text-center">
+              CONTACT <span className="text-[rgb(0,255,255)]"> ME.</span>
+            </h2> 
+            {/* <p>
               Si deseas ponerte en contacto para colaboraciones o proyectos, envíame un correo a:
               <a href="mailto:edily@example.com" className="ml-2 underline text-blue-400">
                 edily@example.com
               </a>
-            </p>
+            </p> */}
+            <Formulario />
           </div>
         </section>
 

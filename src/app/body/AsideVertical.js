@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import imgEdy from "../../../public/assets/diez.png";
 import img2 from "../../../public/image.png";
 import Image from "next/image";
@@ -8,6 +6,9 @@ import { faNode, faReact, faJs } from '@fortawesome/free-brands-svg-icons';
 import RotatingText from "../RotatingText";
 
 export default function Aside () {
+    const scrollToContact = () => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+      };
     return (
         <>
             {/* <aside className="w-[30%] h-[60%] max-w-sm card sticky top-0 bg-red-100">
@@ -85,10 +86,15 @@ export default function Aside () {
                 </li>
             </ul>
             <div className="p-4 border-t mx-8 mt-10">
-                <button className="text-xs block mx-auto rounded-full bg-gray-900 
-                hover:shadow-lg hover:bg-[rgb(0,255,255)] hover:text-gray-900 font-semibold
-                 text-white px-6 py-2">
-                    Lets Talk</button>
+           
+                <button 
+                 onClick={scrollToContact}
+                className="text-xs block mx-auto rounded-full bg-gray-900 
+                    hover:shadow-lg hover:bg-[rgb(0,255,255)] hover:text-gray-900 font-semibold
+                     text-white px-6 py-2">
+                    Let&apos;s Talk
+                </button>
+          
             </div>
         </div>
         </div>

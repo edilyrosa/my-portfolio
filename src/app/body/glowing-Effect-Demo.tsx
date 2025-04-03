@@ -5,8 +5,8 @@ import { GlowingEffect } from "./glowing-effect"
 import Image, { StaticImageData } from "next/image";
 import ingenio from "../../../public/assets/ingenio.jpg";
 import freelance from "../../../public/assets/freelance.jpg";
-import pro3 from "../../../public/assets/pro3.jpg";
-import pro4 from "../../../public/assets/pro4.jpg";
+import alcaldia from "../../../public/assets/alcaldia.png";
+import nuvector from "../../../public/assets/nuvector.png";
 
 // Datos de las tarjetas
 const items = [
@@ -14,37 +14,37 @@ const items = [
   {
     area:"md:[grid-area:1/1/2/7] lg:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
     icon: <Lock className="h-4 w-4 text-black dark:text-neutral-400" />, 
-    title: "SEO, Web Development",
-    description: "Designed and developed",
-    duties: "Explaining the following technologies: HTML, CSS, Tailwind, JavaScript, Node.js, React.js",
-    image:pro3,
-    url: "https://www.ultimochisme.com/"
+    title: "Maracaibo City Hall",
+    description: "Maracaibo, Venezuela (Working on-site)",
+    duties: "Software Developer: Js - Electron.js",
+    image:alcaldia,
+    url: ""
   },
  {
   area:"md:[grid-area:2/1/3/7] lg:[grid-area:1/6/5/25] xl:[grid-area:2/1/3/5]",
     icon: <Settings className="h-4 w-4 text-black dark:text-neutral-400" />, 
-    title: "The best AI",
-    description: "Yes, it's true. I'm not",
-    duties: "Explaining the following technologies: HTML, CSS, Tailwind, JavaScript, Node.js, React.js",
-    image: pro4,
-    url: "https://learning-js-ten.vercel.app/"
+    title: "Nuvector",
+    description: "Georgia, United States (Remotely)",
+    duties: "Software Developer: Js, Python, AWS. Protocols: BLE, LORA, LORAWAN...",
+    image: nuvector,
+    url: ""
   },
 
    {
     area:"md:[grid-area:2/1/10/7] lg:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
     icon: <Box className="h-4 w-4 text-black dark:text-neutral-400" />, 
-    title: 'Back-end & Front-end',
-    description: "Syspro Gestión (Full-Stack Management System)",
+    title: 'Freelance LATAM (Remotely)',
+    description:'LATAM',
     duties: "Explaining the following technologies: HTML, CSS, Tailwind, JavaScript, Node.js, React.js",
     image: freelance,
-    url: "https://sysprogestion.vercel.app/"
+    url: ""
   },
 
 
   {
     area:"md:[grid-area:1/6/10/13] lg:[grid-area:1/6/5/25] xl:[grid-area:1/4/4/13]",
     icon: <Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />, 
-    title: "Ingenio 360",
+    title: "Ingenio 360 (Remotely)",
     description: "San Salvador, El Salvador",
     duties: "Instructor of the following technologies: HTML, CSS, Tailwind, JavaScript, Node.js, React.js",
     image:ingenio,

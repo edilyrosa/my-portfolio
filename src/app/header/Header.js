@@ -595,7 +595,7 @@ export default function ScrollImageSlider() {
           ))}
          
           <ul className="px-2 flex sm:items-start sm:justify-start
-             mt-[-1%] s:mt-[-5%] xs:mt-[8%] sm:mt-[0%] md:mt-[-1%] lg:mt-[-3%]
+             mt-[7%] s:mt-[-1%] xs:mt-[8%] sm:mt-[0%] md:mt-[-1%] lg:mt-[-3%]
              py-4 gap-[10%] sm:gap-[3%] justify-around w-screen
          ">
             {[faJs, faNode, faReact].map((icon, idx) => (
