@@ -51,7 +51,7 @@ export default function Aside () {
                     "UX/UI DESIGN",
                     "CYBERSECURITY",
                     "SOFTWARE ENGINEER",
-                    "+4 YEARS OF EXPERIENCE"
+                    "+5 YEARS OF EXPERIENCE"
                     ]}
                     mainClassName="text-black md:text-[8px] lg:text-xs sm:text-xs p-2 mx-auto 
                     my-4 max-w-[90%] justify-center bg-[rgb(0,255,255)] overflow-hidden rounded-lg"

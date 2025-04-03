@@ -26,7 +26,7 @@ export default function AsideHorizontal() {
             "UX/UI DESIGN",
             "CYBERSECURITY",
             "SOFTWARE ENGINEER",
-            "+4 YEARS OF EXPERIENCE"
+            "+5 YEARS OF EXPERIENCE"
           ]}
           mainClassName="text-black md:text-[8px] lg:text-xs sm:text-xs p-1 mx-auto my-1 max-w-[90%] bg-cyan-400 rounded-lg text-center"
           staggerFrom="last"

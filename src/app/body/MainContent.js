@@ -38,7 +38,7 @@ export default function MainContent() {
             <div className="flex flex-row justify-center items-round gap-[10%] mt-10">
                 {/* Hijo 1 */}
                 <div className="flex flex-col items-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+4</div>
+                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+5</div>
                   <div className="text-[10px] md:text-base text-gray-400">YEARS OF<br/>EXPERIENCE</div>
                 </div>
 
@@ -71,7 +71,7 @@ export default function MainContent() {
 <div className="h-screen"></div>
 
         {/* Sección Experiencia Profesional */}
-        <section id="professional-background" 
+        <section id="laboral-experience" 
         className="md:h-screen w-[98%] snap-start flex flex-col 
         justify-start md:justify-start items-center">
           <div className="mx-auto px-4">

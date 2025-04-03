@@ -91,25 +91,25 @@ export const HoverEffect = ({
                 Tu navegador no soporta la etiqueta de video.
               </video> */}
 
-<video
-        loop
-        autoPlay
-        muted
-        className="
-          bg-black
-          p-4 border-[0.75px] rounded-xl 
-          shadow-[0px_4px_10px_rgba(255,255,255,0.3)] 
-          hover:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
-          hover:saturate-200 hover:contrast-120
-          active:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
-          active:saturate-200 active:contrast-120
-          h-[28vh] w-full
-          object-fill
-        "
-      >
-        <source src={item.img} type="video/mp4" />
-        Tu navegador no soporta la etiqueta de video.
-      </video>
+                    <video
+                      loop
+                      autoPlay
+                      muted
+                      className="
+                        bg-black
+                        p-4 border-[0.75px] rounded-xl 
+                        shadow-[0px_4px_10px_rgba(255,255,255,0.3)] 
+                        hover:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
+                        hover:saturate-200 hover:contrast-120
+                        active:shadow-[0px_4px_10px_rgba(255,255,255,0.9)]
+                        active:saturate-200 active:contrast-120
+                        h-[28vh] w-full
+                        object-fill
+                      "
+                    >
+                      <source src={item.img} type="video/mp4" />
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
 
 
                 </div>

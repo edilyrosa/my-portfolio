@@ -582,7 +582,7 @@ export default function ScrollImageSlider() {
             { text: "UX/UI DESIGN", className:" text-sm s:text-base xs:text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  mt-5 lg:mt-10 text-[rgb(0,0,0)]" },
             { text: "CYBERSECURITY", className: "text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[rgb(0,255,255,1)]" },
             { text: "SOFTWARE ENGINEER", className: "text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-[rgb(255,255,255)]" },
-            { text: "+4", className: "ml-14 text-3xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl sm:mt-8 mt-[10%] text-[rgb(255,0,255,0.8)]" },
+            { text: "+5", className: "ml-14 text-3xl md:ml-8 md:mt-[2.5vh] sm:text-4xl md:text-6xl sm:mt-8 mt-[10%] text-[rgb(255,0,255,0.8)]" },
             { text: "YEARS OF EXPERIENCE", className: "text-xs md:text-sm mt-[-1vh] sm:mb-[-5vh] sm:mt-[-1vh] lg:mt-[-1%] pb-4 text-[rgb(255,0,255,0.8)]" }
           ].map((item, idx) => (
             <p
