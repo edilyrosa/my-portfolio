@@ -69,7 +69,7 @@ export default function MainContent() {
     
 
         
-{/* <div className="h-screen"></div> */}
+<div className="h-screen"></div>
 
         {/* Sección Experiencia Profesional */}
         <section id="laboral-experience" 
@@ -90,7 +90,7 @@ export default function MainContent() {
           </div>
         </section>
 
-{/* <div className="h-screen"></div> */}
+<div className="h-screen"></div>
 
 
         {/* Sección Educación */}
@@ -115,7 +115,7 @@ export default function MainContent() {
         </section>
        
        
-{/* <div className="h-screen"></div> */}
+<div className="h-screen"></div>
         
         {/* Sección experience jobs */}
         <section id="projects" 
@@ -133,7 +133,7 @@ export default function MainContent() {
        
         </section>
         
-{/* <div className="h-screen"></div> */}
+<div className="h-screen"></div>
         
         {/* Sección Contacto */}
         <section id="contact" 
