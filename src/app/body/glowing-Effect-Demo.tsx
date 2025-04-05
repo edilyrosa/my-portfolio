@@ -49,7 +49,7 @@ const items = [
     duties: "Instructor of the following technologies: HTML, CSS, Tailwind, JavaScript, Node.js, React.js",
     image:ingenio,
     url: "https://ingenio-360.com/"
-  },
+  }
 ]
 
 
@@ -57,7 +57,7 @@ const items = [
 
 export default function GlowingEffectDemo() {
   return (
-    <ul className="sm:ml-[3%] grid grid-cols-1 grid-rows-none gap-2 md:gap-x-[7%] max-h-screen 
+    <ul className=" sm:ml-[3%] grid grid-cols-1 grid-rows-none gap-2 md:gap-x-[7%] max-h-screen 
       md:grid-cols-10 md:grid-rows-2 lg:gap-3 lg:gap-x-[3%] xl:gap-x-[8%]">
       {items.map((item, index) => (
         <GridItem key={index} {...item} />
@@ -78,9 +78,9 @@ interface GridItemProps {
 
 const GridItem = ({ area, icon, title, description, duties, image, url }: GridItemProps) => {
   return (
-    <li className={`
+    <li className={` lg:mr-[10px] 
     transform transition duration-300 hover:-translate-y-2 hover:shadow-xl overflow-hidden
-   max-h-[30vh] ocho:max-h-[40vh] md:max-h-[30vh] lg:max-h-[55vh] xl:max-h-[90vh] list-none ${area} 
+   max-h-[30vh] ocho:max-h-[40vh] md:max-h-[30vh] lg:max-h-[30vh] xl:max-h-[65vh] list-none ${area} 
    w-[95%] mx-auto`}>
       <div className="relative h-full rounded-3xl border border-gray-800 p-2 md:p-3">
         <GlowingEffect spread={40} glow={true} disabled={false} proximity={64} inactiveZone={0.01} />

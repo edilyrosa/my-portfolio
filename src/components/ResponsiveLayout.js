@@ -22,9 +22,8 @@ export default function ResponsiveLayout({ children }) {
   return (
     <main className="frow-span-1 flex flex-col md:flex-row p-5">
       {
-        isMediumScreen 
-            ? <AsideVertical /> 
-            : <FloatingDockDemo  />
+        isMediumScreen && <AsideVertical /> 
+          
       }
      
       <MainContent>{children}</MainContent>

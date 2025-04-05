@@ -111,7 +111,7 @@ import ResponsiveLayout from "../components/ResponsiveLayout";
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden h-screen grid grid-rows-[auto_auto_30vh]">
+      <body className="overflow-x-hidden h-screen grid grid-rows-[auto_auto]">
         <header className="row-span-1 flex items-center justify-center">
           <Header />
         </header>
@@ -119,9 +119,9 @@ export default function Layout({ children }) {
         {/* Usa ResponsiveLayout aquí */}
         <ResponsiveLayout>{children}</ResponsiveLayout>
 
-        <footer className="row-span-1 bg-gray-800 text-white flex items-center justify-center h-20">
+        {/* <footer className="row-span-1 bg-gray-800 text-white flex items-center justify-center h-20">
           <p className="text-xl font-bold">© 2023 | Desarrollado por: Edily Mora</p>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );

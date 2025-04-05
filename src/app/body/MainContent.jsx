@@ -69,12 +69,12 @@ export default function MainContent() {
     
 
         
-<div className="h-screen"></div>
+{/* <div className="h-screen"></div> */}
 
         {/* Sección Experiencia Profesional */}
         <section id="laboral-experience" 
         className="md:h-screen w-[98%] snap-start flex flex-col 
-        justify-start md:justify-start items-center">
+        justify-center items-center">
           <div className="mx-auto px-4">
           <h2 className="
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl
@@ -90,7 +90,7 @@ export default function MainContent() {
           </div>
         </section>
 
-<div className="h-screen"></div>
+{/* <div className="h-screen"></div> */}
 
 
         {/* Sección Educación */}
@@ -115,11 +115,11 @@ export default function MainContent() {
         </section>
        
        
-<div className="h-screen"></div>
+{/* <div className="h-screen"></div> */}
         
         {/* Sección experience jobs */}
         <section id="projects" 
-        className="md:h-screen snap-start flex flex-col justify-start md:justify-start items-center">
+        className="md:h-screen snap-start flex flex-col justify-center items-center">
     
             <h2 
             className="
@@ -133,7 +133,7 @@ export default function MainContent() {
        
         </section>
         
-<div className="h-screen"></div>
+{/* <div className="h-screen"></div> */}
         
         {/* Sección Contacto */}
         <section id="contact" 
