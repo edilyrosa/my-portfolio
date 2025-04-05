@@ -120,7 +120,7 @@ export default function MainContent() {
         {/* Sección experience jobs */}
         <section id="projects" 
         className="md:h-screen snap-start flex flex-col 
-        justify-end md:justify-center items-center">
+        justify-center items-center">
     
             <h2 
             className="
