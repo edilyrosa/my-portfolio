@@ -1,17 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import AsideVertical from "../app/body/AsideVertical";
-import AsideHorizontal from "../app/body/AsideHorizontal";
 import MainContent from "../app/body/MainContent";
-import FloatingDockDemo from "./FloatingDockDemo";
-
 
 export default function ResponsiveLayout({ children }) {
   const [isMediumScreen, setIsMediumScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMediumScreen(window.innerWidth >= 768);
+      setIsMediumScreen(window.innerWidth >= 1280);
     };
 
     handleResize();
@@ -30,3 +27,4 @@ export default function ResponsiveLayout({ children }) {
     </main>
   );
 }
+

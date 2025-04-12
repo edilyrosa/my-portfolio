@@ -116,9 +116,9 @@ export const HoverEffect = ({
               </div>
               <div className="h-[30%] w-[100%] flex flex-col justify-center px-2">
                 <CardTitle>
-                  <h3 className="leading-tight px-2 text-base md:text-[12px] xl:font-xs font-semibold text-[rgb(255,255,255)]"> 
-                    Skills: <span className="text-[rgb(0,255,255)]">{item.title}</span>
-                  </h3>
+                  <span className="leading-tight px-2 text-base md:text-[12px] xl:font-xs font-semibold text-[rgb(255,255,255)]"> 
+                    <span className="text-[rgb(0,255,255)]">{item.title}</span>
+                  </span>
 
                 </CardTitle>
                 <CardDescription>{item.description}</CardDescription>

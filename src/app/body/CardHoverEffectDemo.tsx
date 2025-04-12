@@ -15,29 +15,27 @@ export const projects = [
  
   {
     img:"/app-2.mp4",
-    title:"Next.js, SQL, API, Data Analytics & Visualization.",
-    description: "Required knowledge in: State Management, Form Handling & Validation, Security & Data Sanitization, Modular & Scalable Code, Database & Backend Development, Security Best Practices, and Secure Query Handling (Parameterized Queries).",
+    title:"Task Management App: Next.js, Backend | SQL | Real-Time Data | Analytics & Visualization",
+    description: "Built with expertise in: State Management, Form Validation, Secure Input Handling, Scalable Architecture, and Backend Development with SQL & Parameterized Queries. Integrated React Context API + SWR to enable real-time data sync across shared components — ensuring instant updates without reloads and elevating user experience.",
     link: "https://management-task-psi.vercel.app/",
   },
   {
     img:"/app-1.mp4",
-    title: ": SEO, Web Development, Next.js, React.js",
-    description:
-      "Built a management platform with secure RESTful APIs and a PostgreSQL database...",
+    title: "LearnSEO: Next.js | Tailwind CSS | SEO | Lighthouse | UI/UX Design",
+    description:"Modern web performance (LCP 90+ via Google Lighthouse). The site features a clean, responsive layout enhanced by interactive elements and parallax scrolling effects, delivering an engaging and intuitive user experience. ",
     link: "https://learnseo.vercel.app/",
   },
   {
     img:"/app-3.mp4",
-    title:"Magasine",
-    description:
-      "Designed and developed a blog focused on entertainment, implementing Google AdSense...",
+    title:"Ultimo Chisme: SEO-Optimized Digital Magazine | React.js, Material UI | Vite | A-Frame |Responsive Design | SEO Best Practices",
+    description:"Built a visually immersive and SEO-friendly digital magazine application focused on performance and user experience. Designed with a clean, editorial layout, the app integrates fast-loading strategies via Vite",
     link: "https://revista-app.vercel.app/",
   },
   {
     img:"/app-4.mp4",
-    title: ": Back-end & Front-end, Next.js, Prisma ORM",
+    title: "SysProGestion: React.js | Node.js | Express | PostgreSQL | Email Token Authentication | REST APIs | Prisma ORM",
     description:
-      "Built a management platform with secure RESTful APIs and a PostgreSQL database...",
+      "Designed for the Maracaibo City Hall, I contributed to the frontend and authentication features, helping implement a secure email token login system. The app offers a modern dashboard, responsive design, and intuitive user experience, streamlining coordination between public institutions and students.",
     link: "https://sysprogestion.vercel.app/",
   },
   // {
