@@ -567,12 +567,13 @@ export default function ScrollImageSlider() {
   }
 
   return (
-    <>
-      <div className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
+  
+      <header className="bg-[linear-gradient(360deg,rgba(255,255,255,0)_10%,rgba(42,226,255,1)_81%)] 
       flex w-full overflow-hidden perspective-1000
-     h-[50vh] xs:h-[70vh] ocho:h-screen 
-     overflow-y-scroll snap-y snap-mandatory 
+     h-[50vh] xs:h-[70vh] ocho:h-screen
+      snap-y snap-mandatory 
       scroll-smooth hide-scrollbar
+      row-span-1 items-center justify-center snap-start
       "
       >
 
@@ -639,8 +640,8 @@ export default function ScrollImageSlider() {
           />
         </div>
    
-      </div>
-    </>
+      </header>
+ 
   );
 }
 
