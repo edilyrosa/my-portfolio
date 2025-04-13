@@ -28,7 +28,7 @@ export default function MainContent() {
         {/* Sección Intro */}
        <section id="intro" 
        className=" w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
-          <div className="mx-auto px-4 mt-[10%]">
+          <div className="mx-auto px-1 mt-[10%]">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             BRINGING IDEAS TO LIFE THROUGH INTUITIVE AND 
               <span className="text-[rgb(0,255,255)]"> ENGAGING USER EXPERIENCES. 
@@ -60,7 +60,7 @@ export default function MainContent() {
                 </div>
             </div>
 
-            <div className="m-6 text-xl text-justify">Multidisciplinary Software Engineer with a background in Law, skilled in building full-stack applications using Next.js, React, and Node.js. 
+            <div className="m-6 text-base sm:text-xl text-justify">Multidisciplinary Software Engineer with a background in Law, skilled in building full-stack applications using Next.js, React, and Node.js. 
               <span className="text-[rgb(0,255,255)]"> Strong focus on UI/UX, security best practices, and SEO optimization. </span> 
             Passionate about scalable architecture, clean code, and continuous learning.</div>
 

@@ -7,10 +7,10 @@ export default function Layout({ children }) {
     <html lang="en">
       <body className="overflow-x-hidden h-screen grid grid-rows-[auto_auto] 
       overflow-y-scroll scroll-smooth hide-scrollbar">
-        <header className="row-span-1 flex items-center justify-center">
+        <header className="row-span-1 flex items-center justify-center scroll-smooth">
           <Header />
+          <div className="h-[50vh] md:h-screen"></div>
         </header>
-          <div className="h-[50vh] scroll-smooth"></div>
         <ResponsiveLayout>{children}</ResponsiveLayout>
 
       </body>
