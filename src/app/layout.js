@@ -9,11 +9,11 @@ export default function Layout({ children }) {
     hide-scrollbar overflow-y-scroll snap-y snap-mandatory scroll-smooth
       ">
       
-      <div className="h-screen snap-start">
+      <div className="snap-start">
         <Header />
       </div>
          
-    <div className="h-screen snap-start">
+    <div className="snap-start">
         <ResponsiveLayout>{children}</ResponsiveLayout>
     </div>
 
