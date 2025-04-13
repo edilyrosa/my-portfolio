@@ -79,11 +79,11 @@ export default function MainContent() {
         
 <div className="h-[50vh] md:h-screen"></div>
 
-        {/* Sección Experiencia Profesional */}
+        {/* Sección laboral experience */}
         <section id="laboral-experience" 
         className="md:h-screen w-[98%] snap-start flex flex-col 
         justify-end md:justify-center items-center">
-          <div className="mx-auto px-4 mt-[10%]">
+          <div className="mx-auto px-4">
           <h2 className="
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl
               font-bold text-center"> 
@@ -127,11 +127,11 @@ export default function MainContent() {
         
         {/* Sección experience jobs */}
         <section id="projects" 
-        className="md:h-screen snap-start flex flex-col mt-[10%]
+        className="md:h-screen snap-start flex flex-col
         justify-center items-center">
     
             <h2 
-            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+            className="mt-[10%] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
               MOST RECENT <span className="text-[rgb(0,255,255)]"> PROJECTS.</span>
             </h2>
             <div className="text-center my-1
