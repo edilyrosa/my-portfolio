@@ -18,15 +18,17 @@ export default function MainContent() {
           scrollbar-width: none;
         }
       `}</style>
+      
       <section className="w-full h-screen overflow-y-scroll snap-y snap-mandatory 
       scroll-smooth hide-scrollbar">
 
 
+      
         
         {/* Sección Intro */}
        <section id="intro" 
        className=" w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
-          <div className="mx-auto px-4">
+          <div className="mx-auto px-4 mt-[10%]">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             BRINGING IDEAS TO LIFE THROUGH INTUITIVE AND 
               <span className="text-[rgb(0,255,255)]"> ENGAGING USER EXPERIENCES. 
@@ -81,7 +83,7 @@ export default function MainContent() {
         <section id="laboral-experience" 
         className="md:h-screen w-[98%] snap-start flex flex-col 
         justify-end md:justify-center items-center">
-          <div className="mx-auto px-4">
+          <div className="mx-auto px-4 mt-[10%]">
           <h2 className="
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl
               font-bold text-center"> 
@@ -100,7 +102,7 @@ export default function MainContent() {
 
 
         {/* Sección Educación */}
-        <section id="educational-background" 
+        <section id="educational-background mt-[10%]" 
         className="md:h-screen w-[98%]  snap-start flex flex-col pt-4 
         justify-end md:justify-start lg:pt-2 lg:justify-center items-center">
           <div className="mx-auto px-2">
@@ -125,12 +127,11 @@ export default function MainContent() {
         
         {/* Sección experience jobs */}
         <section id="projects" 
-        className="md:h-screen snap-start flex flex-col 
+        className="md:h-screen snap-start flex flex-col mt-[10%]
         justify-center items-center">
     
             <h2 
-            className="
-            mt-[10%] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+            className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
               MOST RECENT <span className="text-[rgb(0,255,255)]"> PROJECTS.</span>
             </h2>
             <div className="text-center my-1

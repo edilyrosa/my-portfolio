@@ -1,5 +1,4 @@
 import img from "../../../public/portfolio.jpg";
-import img2 from "../../../public/image.png";
 import Image from "next/image";
 import './img.css'
 

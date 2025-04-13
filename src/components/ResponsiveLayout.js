@@ -22,7 +22,6 @@ export default function ResponsiveLayout({ children }) {
         isMediumScreen && <AsideVertical /> 
           
       }
-     
       <MainContent>{children}</MainContent>
     </main>
   );
