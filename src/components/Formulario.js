@@ -14,6 +14,8 @@ const Formulario = () => {
 
   useEffect(() => {
     emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+    console.log('funciona', process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+    
   }, []);
 
   const validarCampo = (name, value) => {
