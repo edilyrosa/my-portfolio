@@ -43,6 +43,8 @@ export default function MainContent() {
                   <div className="text-[10px] md:text-base text-gray-400">YEARS OF<br/>EXPERIENCE</div>
                 </div>
 
+                
+                
                 {/* Hijo 2 */}
                 <div className="flex flex-col items-center">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold">+33</div>
@@ -55,6 +57,10 @@ export default function MainContent() {
                   <div className="text-[10px] md:text-base text-gray-400">WORLDWIDE<br/>CLIENTS</div>
                 </div>
             </div>
+
+            <div className="m-6 text-xl text-justify">Multidisciplinary Software Engineer with a background in Law, skilled in building full-stack applications using Next.js, React, and Node.js. 
+              <span className="text-[rgb(0,255,255)]"> Strong focus on UI/UX, security best practices, and SEO optimization. </span> 
+            Passionate about scalable architecture, clean code, and continuous learning.</div>
 
               <div className="flex flex-col justify-center items-center gap-[4%] mt-10">
                 <p>My work</p> 
@@ -69,7 +75,7 @@ export default function MainContent() {
     
 
         
-<div className="h-screen"></div>
+<div className="h-[50vh] md:h-screen"></div>
 
         {/* Sección Experiencia Profesional */}
         <section id="laboral-experience" 
@@ -90,7 +96,7 @@ export default function MainContent() {
           </div>
         </section>
 
-<div className="h-screen"></div>
+<div className="h-[50vh] md:h-screen"></div>
 
 
         {/* Sección Educación */}
@@ -115,7 +121,7 @@ export default function MainContent() {
         </section>
        
        
-<div className="h-screen"></div>
+<div className="h-[50vh] md:h-screen"></div>
         
         {/* Sección experience jobs */}
         <section id="projects" 
@@ -124,7 +130,7 @@ export default function MainContent() {
     
             <h2 
             className="
-            mt-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+            mt-[10%] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
               MOST RECENT <span className="text-[rgb(0,255,255)]"> PROJECTS.</span>
             </h2>
             <div className="text-center my-1
@@ -134,7 +140,7 @@ export default function MainContent() {
        
         </section>
         
-<div className="h-screen"></div>
+<div className="h-[50vh] md:h-screen"></div>
         
         {/* Sección Contacto */}
         <section id="contact" 

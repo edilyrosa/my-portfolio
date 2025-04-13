@@ -2,8 +2,6 @@ import { cn } from "./utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image";
-//import video2 from "../../../public/app-2.mp4"
 export const HoverEffect = ({
   items,
   className,
@@ -115,11 +113,8 @@ export const HoverEffect = ({
                 </div>
               </div>
               <div className="h-[30%] w-[100%] flex flex-col justify-center px-2">
-                <CardTitle>
-                  <span className="leading-tight px-2 text-base md:text-[12px] xl:font-xs font-semibold text-[rgb(255,255,255)]"> 
-                    <span className="text-[rgb(0,255,255)]">{item.title}</span>
-                  </span>
-
+                <CardTitle className="text-[rgb(0,255,255)] p-2 text-xs sm:text-sm font-semibold">
+                  {item.title}
                 </CardTitle>
                 <CardDescription>{item.description}</CardDescription>
               </div>
@@ -163,7 +158,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide", className)}>
+    <h4 className={cn("text-zinc-100", className)}>
       {children}
     </h4>
   );
@@ -178,7 +173,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "py-1 px-2 text-zinc-400 text-[8px] text-justify md:text-xs",
+        "py-1 px-2 text-zinc-400 text-[8px] sm:text-xs text-justify",
         className
       )}
     >
