@@ -26,8 +26,8 @@ export default function MainContent() {
       
         
         {/* Sección Intro */}
-       <section id="intro" 
-       className=" w-[98%] md:h-screen snap-start flex flex-col justify-start md:justify-center items-center">
+       <section id="intro" className=" w-[98%] md:h-screen snap-start flex flex-col
+        justify-center md:justify-startt items-center">
           <div className="mx-auto px-1 mt-[10%]">
             <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
             BRINGING IDEAS TO LIFE THROUGH INTUITIVE AND 
@@ -80,10 +80,9 @@ export default function MainContent() {
 <div className="h-[50vh] md:h-screen"></div>
 
         {/* Sección laboral experience */}
-        <section id="laboral-experience" 
-        className="md:h-screen w-[98%] snap-start flex flex-col 
+        <section id="laboral-experience" className="md:h-screen w-[98%] snap-start flex flex-col
         justify-end md:justify-center items-center">
-          <div className="mx-auto px-4">
+          <div className="mx-auto px-4 mt-[10%] lg:mt-[5%]">
           <h2 className="
               text-2xl sm:text-3xl md:text-4xl lg:text-5xl
               font-bold text-center"> 
@@ -101,9 +100,8 @@ export default function MainContent() {
 <div className="h-[50vh] md:h-screen"></div>
 
 
-        {/* Sección Educación */}
-        <section id="educational-background mt-[10%]" 
-        className="md:h-screen w-[98%]  snap-start flex flex-col pt-4 
+        {/* background academy */}
+        <section id="educational-background" className="md:h-screen w-[98%] snap-start flex flex-col pt-10 mt-[10%]
         justify-end md:justify-start lg:pt-2 lg:justify-center items-center">
           <div className="mx-auto px-2">
             <h2 className="
@@ -125,13 +123,12 @@ export default function MainContent() {
        
 <div className="h-[50vh] md:h-screen"></div>
         
-        {/* Sección experience jobs */}
-        <section id="projects" 
-        className="md:h-screen snap-start flex flex-col
+        {/* poject */}
+        <section id="projects" className="md:h-screen snap-start flex flex-col
         justify-center items-center">
     
             <h2 
-            className="mt-[10%] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
+            className="mt-[20%] md:mt-[30%] ocho:mt-[20%] lg:mt-[10%] text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-center">
               MOST RECENT <span className="text-[rgb(0,255,255)]"> PROJECTS.</span>
             </h2>
             <div className="text-center my-1
@@ -144,9 +141,8 @@ export default function MainContent() {
 <div className="h-[50vh] md:h-screen"></div>
         
         {/* Sección Contacto */}
-        <section id="contact" 
-        className="w-[98%] md:h-screen snap-start flex flex-col 
-        justify-center items-center">
+        <section id="contact" className="w-[98%] h-screen snap-start flex flex-col 
+      justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 
               className="text-3xl font-bold mb-4 text-center">
